@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeGame();
 });
 
+let counter = 0;
+let currShips = 0;
 function initializeGame() {
-    const shipCount = 4;
+    const shipCount = 5;
     const totalBoxes = 16;
     const images = [];
     for (let i = 0; i < shipCount; i++) {
@@ -16,8 +18,6 @@ function initializeGame() {
         const j = Math.floor(Math.random() * (i + 1));
         [images[i], images[j]] = [images[j], images[i]];
     }
-    let counter = 0;
-    let currShips = 0;
     for (let i = 0; i < totalBoxes; i++) {
         const box = document.getElementById(`box${i}`);
         box.innerHTML = '';
@@ -35,19 +35,13 @@ function initializeGame() {
             if(img.src.includes("battleship.png")){
                 currShips++;
             }
-            if(currShips === 5){
+            if(currShips === 4){
                 alert("You Won!!!");
-                counter = 0;
-                currShips = 0;
                 resetGame();
-                return;
             }
             else if(counter === 8){
                 alert("You Lost!!!");
-                counter = 0;
-                currShips = 0;
                 resetGame();
-                return;
             }
         });
     }
@@ -55,6 +49,8 @@ function initializeGame() {
 
 function resetGame() {
     const boxes = document.querySelectorAll('.game-img');
+    counter = 0;
+    currShips = 0;
     boxes.forEach(img => img.style.display = 'none');
     initializeGame();
 }
