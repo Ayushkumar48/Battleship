@@ -37,20 +37,18 @@ function initializeGame() {
             }
             if(currShips === 4){
                 alert("You Won!!!");
-                resetGame();
+                refreshPage();
             }
             else if(counter === 8){
                 alert("You Lost!!!");
-                resetGame();
+                refreshPage();
             }
         });
     }
 }
 
-function resetGame() {
+function refreshPage(){
     const boxes = document.querySelectorAll('.game-img');
-    counter = 0;
-    currShips = 0;
     boxes.forEach(img => img.style.display = 'none');
-    initializeGame();
-}
+    window.location.reload();
+} 
