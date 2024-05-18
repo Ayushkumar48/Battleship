@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initializeGame() {
-    const shipCount = 5;
+    const shipCount = 4;
     const totalBoxes = 16;
     const images = [];
     for (let i = 0; i < shipCount; i++) {
