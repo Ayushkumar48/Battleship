@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Battleship - The Game</title>
+  </head>
+  <body>
+    <h1 class="main-heading">Battleship</h1>
+    <main id="main-content">
+      <div class="text-content">
+        <p style="text-align: center">Game Rules:</p>
+        <p>1. Click on the cells to reveal the image hidden behind them.</p>
+        <p>2. There are five ships hidden in this game.</p>
+        <p>
+          3. You win if you can find all the ships in less than 8 clicks, else
+          you lose.
+        </p>
+      </div>
+      <div class="main-game">
+        <div class="big-box">
+          <div class="small-box" id="box0"></div>
+          <div class="small-box" id="box1"></div>
+          <div class="small-box" id="box2"></div>
+          <div class="small-box" id="box3"></div>
+          <div class="small-box" id="box4"></div>
+          <div class="small-box" id="box5"></div>
+          <div class="small-box" id="box6"></div>
+          <div class="small-box" id="box7"></div>
+          <div class="small-box" id="box8"></div>
+          <div class="small-box" id="box9"></div>
+          <div class="small-box" id="box10"></div>
+          <div class="small-box" id="box11"></div>
+          <div class="small-box" id="box12"></div>
+          <div class="small-box" id="box13"></div>
+          <div class="small-box" id="box14"></div>
+          <div class="small-box" id="box15"></div>
+        </div>
+      </div>
+      <div class="button">
+        <button type="button" class="btn" onclick="resetGame()">Reset</button>
+      </div>
+    </main>
+  </body>
+</html>
