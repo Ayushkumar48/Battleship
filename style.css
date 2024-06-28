@@ -1,59 +1,59 @@
-body{
-    background-color: #E74B3C;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
+body {
+  background-color: darksalmon;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
-.button{
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
+.button {
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
 }
-.btn{
-    background-color: #BA2D18;
-    border-right: #6B68E6 3px solid;
-    border-bottom: #6B68E6 3px solid;
-    border-top: 0;
-    border-left: 0;
-    padding: 10px 30px 10px 30px;
+.btn {
+  background-color: #ba2d18;
+  border-right: #6b68e6 3px solid;
+  border-bottom: #6b68e6 3px solid;
+  border-top: 0;
+  border-left: 0;
+  padding: 10px 30px 10px 30px;
 }
-.main-heading{
-    font-size: 100px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-decoration-color: #3498DB;
+.main-heading {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #3498db;
 }
-.big-box{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    width: 50vmin;
-    height: 50vmin;
-    gap: 0px;
-    border: 2px solid white;
+.big-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 50vmin;
+  height: 50vmin;
+  gap: 0px;
+  border: 2px solid white;
 }
-.small-box{
-    border: 2px solid white;
+.small-box {
+  border: 2px solid white;
 }
-.main-game{
-    justify-content: center;
-    display:grid;
+.main-game {
+  justify-content: center;
+  display: grid;
 }
-#main-content{
-    justify-content: center;
+#main-content {
+  justify-content: center;
 }
-.text-content{
-    line-height: 50%;
-    font-weight: 425;
+.text-content {
+  line-height: 50%;
+  font-weight: 425;
 }
-.game-image{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
